@@ -1,0 +1,9 @@
+test_id,input,expected,description
+TC_A01,192.168.1.1,True,Typical private address
+TC_A02,255.255.255.255,True,Upper boundary all octets
+TC_A03,0.0.0.0,True,Lower boundary all octets
+TC_A04,256.0.0.1,False,Octet one above max
+TC_A05,1.2.3,False,Only three octets
+TC_A06,192.168.1.0/24,True,Valid CIDR
+TC_A07,192.168.1.0/33,False,CIDR prefix above 32
+TC_A08,,False,Empty string

@@ -1,0 +1,8 @@
+test_id,text,min_val,max_val,expected,description
+TC_B01,abc,1,5,True,Inside range
+TC_B02,,1,5,False,Empty below minimum
+TC_B03,a,1,5,True,Exactly at minimum
+TC_B04,abcde,1,5,True,Exactly at maximum
+TC_B05,abcdef,1,5,False,One above maximum
+TC_B06,abc,3,3,True,Exact length match
+TC_B07,abc,5,1,False,Min greater than max
