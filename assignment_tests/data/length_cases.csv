@@ -6,3 +6,5 @@ TC_B04,abcde,1,5,True,Exactly at maximum
 TC_B05,abcdef,1,5,False,One above maximum
 TC_B06,abc,3,3,True,Exact length match
 TC_B07,abc,5,1,False,Min greater than max
+TC_B08,,0,0,True,Empty string with zero limits
+TC_B09,a,0,0,False,One character above zero maximum
