@@ -37,6 +37,10 @@ ECP: only min, only max, no limits, negatives, floats, strings (alphabetical).
 ### Member B: `length(value, min_val, max_val)` (range 1..5)
 BVA: len 0 F, 1 T, 2 T, 4 T, 5 T, 6 F. min=0 allows "", min=max exact length, min > max invalid.
 ECP: only min, only max, no limits, unicode chars (count characters), spaces count.
+Additional tests implemented:
+- Only minimum: `length("hello", min_val=3)` → True.
+- Only maximum: `length("hi", max_val=3)` → True.
+- Spaces and Unicode: `length(" é ", min_val=3, max_val=3)` → True (spaces count as characters).
 
 ## Task 3 data files
 `assignment_tests/data/ipv4_cases.csv` (Member A), `length_cases.csv` (Member B).
